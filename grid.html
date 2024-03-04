@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid</title>
+    <link rel="stylesheet" href="g.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="ebay.png" alt="">
+        </div>
+        <div class="grid-item">
+            <img src="O.png" alt="">
+        </div>
+        <div class="grid-item">
+            <img src="800.jpg" alt="">
+        </div>
+        <!-- Add more grid items as needed -->
+    </div>
+    <button onclick="addGridItem()">Add Grid Item</button>
+
+    <script>
+        function addGridItem() {
+            var gridContainer = document.getElementById("gridContainer");
+            var newItem = document.createElement("div");
+            newItem.className = "grid-item";
+            newItem.textContent = "New Item";
+            gridContainer.appendChild(newItem);
+        }
+    </script>
+</body>
+</html>
